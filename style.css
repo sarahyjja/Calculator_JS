@@ -10,3 +10,16 @@ table {
   margin-top: 30px;
   padding: 5px;
 }
+
+.box{
+  width: 70px;
+  height: 70px;
+  font-size: 3em;
+  border: none;
+}
+
+.box:hover {
+  background-color: #999;
+  border-radius: 50px;
+  color: #FFF;
+}
