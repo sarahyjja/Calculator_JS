@@ -1,1 +1,12 @@
-
+table {
+  width: 500px;
+  height: 500px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #CCC;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  padding: 5px;
+}
