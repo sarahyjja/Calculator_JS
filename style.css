@@ -69,3 +69,26 @@ table {
   border-width: 2px;
   padding-bottom: 5px;
 }
+
+.equal {
+  width: 70px;
+  height: 70px;
+  font-size: 3em;
+  background-color: #00FF00;
+  border-color: #00FF00;
+  color: #FFF;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 2px;
+  padding-bottom: 10px;
+}
+
+.equal:hover {
+  background-color: #FFF;
+  color: #00FF00;
+  border-color: #00FF00;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 2px;
+  padding-bottom: 10px;
+}
