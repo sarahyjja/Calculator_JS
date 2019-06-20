@@ -11,6 +11,31 @@ table {
   padding: 5px;
 }
 
+input {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  float: left;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+#display {
+  width:430px;
+  float: right;
+  font-size: 50px;
+  text-align: right;
+  background-color: #FFF;
+  border-color: #CCC;
+  color: #777;
+  margin-right: 18px;
+  padding-right: 10px;
+}
+
 .box{
   width: 70px;
   height: 70px;
