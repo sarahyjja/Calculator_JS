@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js"></script>
     <title>Calculator</title>
   </head>
   <body>
@@ -14,28 +15,28 @@
           </td>
         </tr>
         <tr>
-          <td><button class="box" type="button" value="1" onclick="calculator.display.value += '1'">1</td>
-          <td><button class="box" type="button" value="2" onclick="calculator.display.value += '2'">2</td>
-          <td><button class="box" type="button" value="3" onclick="calculator.display.value += '3'">3</td>
-          <td><button class="operator" type="button" value="+" onclick="calculator.display.value += '+'">+</td>
+          <td><button class="box" type="button" value="1" onclick="appendValue(1)">1</td>
+          <td><button class="box" type="button" value="2" onclick="appendValue(2)">2</td>
+          <td><button class="box" type="button" value="3" onclick="appendValue(3)">3</td>
+          <td><button class="operator" type="button" value="+" onclick="appendValue('+')">+</td>
         </tr>
         <tr>
-          <td><button class="box" type="button" value="4" onclick="calculator.display.value += '4'">4</td>
-          <td><button class="box" type="button" value="5" onclick="calculator.display.value += '5'">5</td>
-          <td><button class="box" type="button" value="6" onclick="calculator.display.value += '6'">6</td>
-          <td><button class="operator" type="button" value="-" onclick="calculator.display.value += '-'">-</td>
+          <td><button class="box" type="button" value="4" onclick="appendValue(4)">4</td>
+          <td><button class="box" type="button" value="5" onclick="appendValue(5)">5</td>
+          <td><button class="box" type="button" value="6" onclick="appendValue(6)">6</td>
+          <td><button class="operator" type="button" value="-" onclick="appendValue('-')">-</td>
         </tr>
         <tr>
-          <td><button class="box" type="button" name="seven" value="7" onclick="calculator.display.value += '7'">7</td>
-          <td><button class="box" type="button" name="eight" value="8" onclick="calculator.display.value += '8'">8</td>
-          <td><button class="box" type="button" name="nine" value="9" onclick="calculator.display.value += '9'">9</td>
-          <td><button class="operator" type="button" value="x" onclick="calculator.display.value += '*'">x</td>
+          <td><button class="box" type="button" name="seven" value="7" onclick="appendValue(7)">7</td>
+          <td><button class="box" type="button" name="eight" value="8" onclick="appendValue(8)">8</td>
+          <td><button class="box" type="button" name="nine" value="9" onclick="appendValue(9)">9</td>
+          <td><button class="operator" type="button" value="x" onclick="appendValue('*')">x</td>
         </tr>
         <tr>
-          <td><button class="clear" type="button" value="c" onclick="calculator.display.value = ''">C</td>
-          <td><button class="box" type="button" value="0" onclick="calculator.display.value += '0'">0</td>
-          <td><button class="equal" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">=</td>
-          <td><button class="operator" type="button" value="/" onclick="calculator.display.value += '/'">/</td>
+          <td><button class="clear" type="button" value="c" onclick="cleanDisplay()">C</td>
+          <td><button class="box" type="button" value="0" onclick="appendValue(0)">0</td>
+          <td><button class="equal" type="button" value="=" onclick="calculate()">=</td>
+          <td><button class="operator" type="button" value="/" onclick="appendValue('/')">/</td>
         </tr>
       </table>
     </form>
